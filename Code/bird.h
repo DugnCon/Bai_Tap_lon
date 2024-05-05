@@ -9,6 +9,20 @@ using namespace std;
 
 class Bird
 {
+private:
+    const char* path = "yellowBird.png";
+    SDL_Texture* texture = NULL;
+    SDL_Surface* surface = NULL;
+    SDL_Rect srcrect;
+    int flapStatus = 2;
+    bool flapReversed = false;
+    int speed = 500;
+    int velocity = 0;
+    int delay = 0;
+    double angle = 0;
+    int hold = 0;
+    SDL_Point* center = NULL;
+    SDL_RendererFlip flip = SDL_FLIP_NONE;
 public:
     SDL_Rect dstrect;
 
@@ -26,20 +40,6 @@ public:
     void versusstatusUpdate(bool& close);
     void collideBase(SDL_Rect rect1, SDL_Rect rect2, bool& lose);
     void destroy();
-private:
-    const char* path = "yellowBird.png";
-    SDL_Texture* texture = NULL;
-    SDL_Surface* surface = NULL;
-    SDL_Rect srcrect;
-    int flapStatus = 2;
-    bool flapReversed = false;
-    int speed = 500;
-    int velocity = 0;
-    int delay = 0;
-    double angle = 0;
-    int hold = 0;
-    SDL_Point* center = NULL;
-    SDL_RendererFlip flip = SDL_FLIP_NONE;
 };
 
 #endif // BIRD_H
