@@ -23,6 +23,8 @@ void Bird::loadPNG(SDL_Renderer* renderer)
 
 void Bird::initCasual()
 {
+    /*srcrect = {0,30,45,34};
+    dstrect = { (1280 - dstrect.w) , (720 - dstrect.h) , 65 , 50 };*/
     srcrect = { 0,25,34,24 };
     dstrect = { (1280 - dstrect.w) / 2, (720 - dstrect.h) / 2, 34 * 2, 24 * 2 };
     speed = 500;
@@ -34,6 +36,8 @@ void Bird::initCasual()
 
 void Bird::initVersus()
 {
+    /*srcrect = {0,30,45,34};
+   dstrect = { (1280 - dstrect.w) , (720 - dstrect.h) , 65 , 50 };*/
     srcrect = { 0,25,34,24 };
     dstrect = { (1280 - dstrect.w) / 2, (720 - dstrect.h) - 127, 34 * 2, 24 * 2 };
     speed = 500;
@@ -99,6 +103,8 @@ void Bird::versusstatusUpdate(bool& close)
 
 void Bird::update()
 {
+    /*dstrect.y += (speed + velocity) / 50;
+    dstrect.y += (speed + velocity) / 100;*/
     dstrect.y += (speed + velocity) / 200;
     velocity += 9.8 * 5;
     aniUpdate();
@@ -132,6 +138,7 @@ void Bird::aniUpdate()
             flapStatus = 2;
             flapReversed = true;
         }
+        
         delay = 0;
     }
 }
@@ -146,6 +153,7 @@ void Bird::keyUpdate()
 
 void Bird::versusKeyUpdate()
 {
+    //dstrect.y -= speed / 2;
     dstrect.y -= speed / 7;
     velocity = 9.8;
     hold = 15;
