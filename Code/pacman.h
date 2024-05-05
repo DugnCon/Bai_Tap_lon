@@ -10,15 +10,6 @@ using namespace std;
 
 class Pacman
 {
-public:
-    void loadPacman(SDL_Renderer* renderer);
-    void init(int pos, int yPipe);
-    void aniUpdate();
-    void update(int multiplier);
-    void display(SDL_Renderer* renderer);
-    void destroy();
-
-    SDL_Rect srcrect, dstrect;
 private:
     const char* path = "pacman_ghost.png";
     SDL_Surface* surface = NULL;
@@ -29,6 +20,15 @@ private:
     int status = 1;
     int yPos = 500;
     bool pacmanReverse = false;
+public:
+    void loadPacman(SDL_Renderer* renderer);
+    void init(int pos, int yPipe);
+    void aniUpdate();
+    void update(int multiplier);
+    void display(SDL_Renderer* renderer);
+    void destroy();
+
+    SDL_Rect srcrect, dstrect;
 };
 
 #endif // PACMAN_H
