@@ -5,7 +5,7 @@ using namespace std;
 void Background::select() {
     srand(time(NULL));
     int selection = rand() % 2 + 1;
-    if (selection == 1) path = "dayBackground.png";
+    if (selection == 1) path = "bacck_gr.png";
     else if (selection == 2) path = "nightBackground.png";
 }
 
@@ -17,7 +17,7 @@ void Background::init(SDL_Renderer* renderer) {
     //music = new SFX;
     //music->init()
 }
-//tinh khung hinh cho anh toa do x , y
+//tinh khung hinh cho anh toa do x , y , he so nhan khung hinh
 void Background::display(SDL_Renderer* renderer, int multiplier) {
     SDL_RenderCopy(renderer, texture, NULL, &rect1);
     SDL_RenderCopy(renderer, texture, NULL, &rect2);
