@@ -27,7 +27,7 @@ void Bird::initCasual()
     dstrect = { (1280 - dstrect.w) , (720 - dstrect.h) , 65 , 50 };*/
     srcrect = { 0,25,34,24 };
     dstrect = { (1280 - dstrect.w) / 2, (720 - dstrect.h) / 2, 34 * 2, 24 * 2 };
-    speed = 500;
+    speed = 550;
     velocity = 0;
     delay = 0;
     angle = 0;
@@ -40,7 +40,7 @@ void Bird::initVersus()
    dstrect = { (1280 - dstrect.w) , (720 - dstrect.h) , 65 , 50 };*/
     srcrect = { 0,25,34,24 };
     dstrect = { (1280 - dstrect.w) / 2, (720 - dstrect.h) - 127, 34 * 2, 24 * 2 };
-    speed = 500;
+    speed = 570;
     velocity = 0;
     delay = 0;
     angle = 0;
@@ -65,7 +65,7 @@ void Bird::statusUpdate(bool& close)
     }
     if (angle < 90 && hold == 0)
     {
-        angle += 7;
+        angle += 6;
     }
 
     //thiet lap gioi han
@@ -103,8 +103,12 @@ void Bird::versusstatusUpdate(bool& close)
 
 void Bird::update()
 {
-    /*dstrect.y += (speed + velocity) / 50;
-    dstrect.y += (speed + velocity) / 100;*/
+    ///dstrect.y += (speed + velocity) / 50;
+    //dstrect.y += (speed + velocity) / 100;
+    //dstrect.y += (speed + velocity) / 75;
+    //dstrect.y += (speed + velocity) / 80;
+    //dstrect.y += (speed + velocity) / 150;
+    //dstrect.y += (speed + velocity) / 145;
     dstrect.y += (speed + velocity) / 200;
     velocity += 9.8 * 5;
     aniUpdate();
@@ -146,16 +150,19 @@ void Bird::aniUpdate()
 void Bird::keyUpdate()
 {
     dstrect.y -= speed / 7;
-    velocity = 9.8;
-    angle = -20;
+    velocity = 10;
+    angle = -18;
     hold = 15;
 }
 
 void Bird::versusKeyUpdate()
 {
     //dstrect.y -= speed / 2;
+    //dstrect.y -= speed / 4;
+     //dstrect.y -= speed / 10;
+     //dstrect.y -= speed / 5;
     dstrect.y -= speed / 7;
-    velocity = 9.8;
+    velocity = 10;
     hold = 15;
 }
 
