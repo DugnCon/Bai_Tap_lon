@@ -3,6 +3,7 @@
 B1: Tải project về
 Cách 1: Trên Github, chọn Code => Download ZIP
 Cách 2: Mở terminal tại thư mục muốn lưu project, sử dụng lệnh git init để khởi tạo Git, sau đó dùng lệnh git clone https://github.com/DugnCon/Bai_Tap_lon để clone project về máy.
+
 B2: Chạy game
 Tìm file main.exe và chạy file.
 
