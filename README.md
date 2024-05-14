@@ -23,5 +23,8 @@ Tìm file main.exe và chạy file.
 - Vector.
 - Các thuật toán cơ bản để xử lí va chạm, animation.
 
-# V. Kết luận
+# V. Demo về game
+link dẫn: https://www.youtube.com/watch?v=fQoJZuBwrkU
+
+# VI. Kết luận
 - Do đây là sản phẩm đầu tay cũng như chưa có nhiều kinh nghiệm và phải đi tìm tòi nhiều nên có vài phần còn thiếu sót.
