@@ -15,7 +15,7 @@ Tìm file main.exe và chạy file.
 # III. Chức năng của trò chơi
 - Sử dụng chuột trái, hoặc bàn phím (W, Space, Phím mũi tên hướn lên trên) thực hiện bước nhảy của chim.
 - Menu đơn giản, người chơi có thể chơi lại khi thua cuộc.
-
+- Có thể chơi trong thời gian dài mà không lo bị giới hạn thời gian
 # IV. Kĩ thuật lập trình được sử dụng
 - Thư viện đồ họa SDL.
 - OOP.
@@ -24,7 +24,7 @@ Tìm file main.exe và chạy file.
 - Các thuật toán cơ bản để xử lí va chạm, animation.
 
 # V. Demo về game
-link dẫn: https://www.youtube.com/watch?v=fQoJZuBwrkU
+- Link dẫn: https://www.youtube.com/watch?v=fQoJZuBwrkU
 
 # VI. Kết luận
 - Do đây là sản phẩm đầu tay cũng như chưa có nhiều kinh nghiệm và phải đi tìm tòi nhiều nên có vài phần còn thiếu sót.
