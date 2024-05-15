@@ -7,8 +7,6 @@ Cách 2: Mở terminal tại thư mục muốn lưu project, sử dụng lệnh 
 B2: Chạy game
 Tìm file main.exe và chạy file.
 
-.Net
-
 # II. Mô tả chung về trò chơi
 - Thể loại: Hành động.
 - Người chơi điều khiển chú chim vượt qua các chướng ngại vật, tránh các con quái vật lẫn thu thập đồng xu và mỗi lần vượt qua các chướng ngại vật sẽ thiết lập kỉ lục cao nhất.
